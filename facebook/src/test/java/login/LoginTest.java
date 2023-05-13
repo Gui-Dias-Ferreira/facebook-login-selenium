@@ -18,9 +18,9 @@ public class LoginTest {
 		driver.manage().window().maximize();
 
 		driver.findElement(By.cssSelector("input[data-testid='royal_email']"))
-				.sendKeys("testeqa.automatizacao@outlook.com");
+				.sendKeys("email");
 
-		driver.findElement(By.cssSelector("input[data-testid='royal_pass']")).sendKeys("testeqa123456");
+		driver.findElement(By.cssSelector("input[data-testid='royal_pass']")).sendKeys("senha");
 
 		driver.findElement(By.cssSelector("button[data-testid='royal_login_button'")).click();
 
