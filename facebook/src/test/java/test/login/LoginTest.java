@@ -23,7 +23,7 @@ public class LoginTest {
 
 	@Test
 	public void deveriaEfetuarLogin() {
-		this.login.preencherFormularioUsuarioSenha("testeqa.automatizacao@outlook.com", "testeqa123456");
+		this.login.preencherFormularioUsuarioSenha("email", "senha");
 		Assert.assertTrue(this.login.isUrlWelcome());
 	}
 
