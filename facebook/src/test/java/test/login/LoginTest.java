@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import pages.login.LoginPage;
+import pages.LoginPage;
 
 public class LoginTest {
 
@@ -23,7 +23,7 @@ public class LoginTest {
 
 	@Test
 	public void deveriaEfetuarLogin() {
-		this.login.preencherFormularioUsuarioSenha("email", "senha");
+		this.login.preencherFormularioUsuarioSenha("testeqa.automatizacao@outlook.com", "testeqa123456");
 		Assert.assertTrue(this.login.isUrlWelcome());
 	}
 
