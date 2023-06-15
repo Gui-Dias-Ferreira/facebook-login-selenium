@@ -9,7 +9,7 @@ import pages.NovaContaPage;
 public class NovaContaTest {
 
 	private NovaContaPage novaConta;
-	
+
 	@BeforeEach
 	public void beforeEach() {
 		this.novaConta = new NovaContaPage();
@@ -19,9 +19,15 @@ public class NovaContaTest {
 	public void afterEach() {
 		this.novaConta.fechar();
 	}
-	
+
 	@Test
 	public void deveriaClicarNoBotaoCriarNovaConta() {
 		this.novaConta.clicarCriarNovaConta();
+	}
+
+	@Test
+	public void deveriaPreencherFormularioCadastreSe() {
+		this.novaConta.clicarCriarNovaConta();
+		this.novaConta.preencherCadastreSe();
 	}
 }
