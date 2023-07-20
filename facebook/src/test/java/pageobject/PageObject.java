@@ -1,5 +1,7 @@
 package pageobject;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,6 +20,9 @@ public class PageObject {
 		} else {
 			this.browser = browser;
 		}
+		
+//		espera o elemento aparecer pra ser localizado.
+		this.browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	public void fechar() {

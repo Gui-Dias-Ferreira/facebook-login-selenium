@@ -21,11 +21,6 @@ public class NovaContaTest {
 	}
 
 	@Test
-	public void deveriaClicarNoBotaoCriarNovaConta() {
-		this.novaConta.clicarCriarNovaConta();
-	}
-
-	@Test
 	public void deveriaPreencherFormularioCadastreSe() {
 		this.novaConta.clicarCriarNovaConta();
 		this.novaConta.preencherCadastreSe();
